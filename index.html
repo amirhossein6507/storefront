@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      sec="header"
+      class="flex justify-center items-center w-full h-[70px] shadow-[0_2px_10px_#6b6b6b44]"
+    >
+      <nav sec="menu" id="navBar" class="h-full flex items-center"></nav>
+    </header>
+
+    <div
+      sec="name-store-container"
+      class="h-[40vh] w-full flex justify-center items-center"
+    >
+      <h1 sec="name-store" class="text-[46px] font-black capitalize">
+        storefront
+      </h1>
+    </div>
+
+    <div sec="serach-box-container" class="h-[60px] px-[40px] py-[5px]">
+      <div
+        class="h-full w-full rounded-full flex py-1.5 border-[1px] border-gray-400"
+      >
+        <div
+          sec="search-icon"
+          class="h-full flex items-center justify-center w-[50px] border-r-[1px] border-r-gray-400"
+        >
+          <i class="bxr bx-search-big text-[22px]"></i>
+        </div>
+        <input
+          type="search"
+          class="outline-0 border-0 h-full grow px-3 text-[17px] text-[#5b5b5b]"
+          placeholder="search box"
+        />
+      </div>
+    </div>
+
+    <div id="productContainer" class="p-[50px] flex flex-wrap gap-[25px]"></div>
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
